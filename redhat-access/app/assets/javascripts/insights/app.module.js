@@ -65,14 +65,12 @@
                   'plan_id' : planId
                 }
                 var ansibleFeatureName = 'ansible_run_insights_plan'
-                var ansibleHostIds = ['juana-sensel.lobatolan.home']
-                // ASK LINDANI HOW TO GET LIST OF HOSTS FOR A PLAN
 
                 if (button === "run") {
                     var data = {
                       'job_invocation' : {
                         'feature' : ansibleFeatureName,
-                        'host_ids' : ansibleHostIds,
+                        'host_ids' : 'plan_id=' + ansibleRunInputs['plan_id'],
                         'inputs' : ansibleRunInputs
                       }
                     };
@@ -85,9 +83,8 @@
                     });
 
                 } else if (button === "customize") {
-                    // NEED TO LOOK INTO HOW TO SEND THIS HASH OF INPUTS
                     window.location = "/job_invocations/new?feature=" + ansibleFeatureName +
-                      "&host_ids[]=" + ansibleHostIds.join() +
+                      "&host_ids=" + 'plan_id=' + ansibleRunInputs['plan_id'] +
                       "&inputs[plan_id]=" + ansibleRunInputs['plan_id'] +
                       "&inputs[organization_id]=" + ansibleRunInputs['organization_id'];
                 }

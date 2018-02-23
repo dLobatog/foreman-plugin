@@ -1,0 +1,82 @@
+# この viminfo ファイルは Vim 7.4 によって生成されました.
+# 変更する際には十分注意してください!
+
+# このファイルが書かれた時の 'encoding' の値
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# コマンドライン 項目の履歴 (新しいものから古いものへ):
+
+# 検索文字列 項目の履歴 (新しいものから古いものへ):
+
+# 式 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# レジスタ:
+""0	CHAR	0
+	
+	let s:background="dark"
+	Highlight clear
+	if exists("syntax_on")
+	  syntax reset
+	endif
+	let g:colors_name = "railscasts"
+	
+	
+	Highlight Normal                    guifg=#E6E1DC guibg=#2B2B2B
+	Highlight Cursor                    guibg=#FFFFFF
+	Highlight CursorLine                guibg=#333435
+	Highlight LineNr                    guifg=#888888 guibg=#DEDEDE
+	Highlight Search                    guibg=#5A647E
+	Highlight Visual                    guibg=#5A647E
+	
+	Highlight Folded                    guifg=#F6F3E8 guibg=#444444 gui=NONE
+	
+	Highlight Directory                 guifg=#A5C261 gui=NONE
+	
+	Highlight Pmenu                     guifg=#F6F3E8 guibg=#444444 gui=NONE
+	Highlight PmenuSel                  guifg=#000000 guibg=#A5C261 gui=NONE
+	Highlight PMenuSbar                 guibg=#5A647E gui=NONE
+	Highlight PMenuThumb                guibg=#AAAAAA gui=NONE
+	
+	
+	Highlight Comment                   guifg=#BC9458 gui=italic
+	Highlight Todo                      guifg=#BC9458 guibg=NONE gui=italic
+	
+	Highlight Constant                  guifg=#6D9CBE
+	
+	Highlight Define                    guifg=#CC7833
+	
+	Highlight Delimiter                 guifg=#519F50
+	
+	Highlight Error                     guifg=#FFFFFF guibg=#990000
+	
+	Highlight Function                  guifg=#FFC66D gui=NONE
+	
+	Highlight Identifier                guifg=#D0D0FF gui=NONE
+	
+	Highlight Include                   guifg=#CC7833 gui=NONE
+	
+	Highlight Keyword                   guifg=#CC7833
+	
+	Highlight Macro                     guifg=#CC7833 gui=NONE
+	
+	Highlight Number                    guifg=#A5C261
+	
+	Highlight PreCondit                 guifg=#CC7833 gui=NONE
+
+# グローバル変数:
+!CODEREVIEW_INSTALL_PATH	STR	/home/vagrant/.vim/bundle/vim-codereview/plugin
+
+# ファイルマーク:
+'0  1  0  ~/foreman-plugin/redhat-access/ack
+
+# ジャンプリスト (新しいものが先):
+-'  1  0  ~/foreman-plugin/redhat-access/ack
+
+# ファイル内マークの履歴 (新しいものから古いもの):
